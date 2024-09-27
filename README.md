@@ -7,4 +7,6 @@ Os dados que receberemos estão nesse modelo (https://www.kaggle.com/datasets/ga
 
 É necessário também desenvolver um trecho de código para servir de exemplo para os engenheiros de software e de dados. Aqui, deixamos a sua escolha qual parte do código deseja construir para servir de exemplo. Podemos utilizar, Python, Pyspark, Sql e/ou Scala. Precisamos também explicar os motivadores para a escolha de tecnologia."
 
-![image](https://github.com/user-attachments/assets/57a7bee8-2d22-461b-b6b9-6685b0338a1e)
+# ARQUITETURA SUGERIDA
+
+![image](https://github.com/user-attachments/assets/62a1b30a-6bf9-47f6-bdd1-03a66b84f371)
