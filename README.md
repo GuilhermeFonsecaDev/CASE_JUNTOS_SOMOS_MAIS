@@ -10,3 +10,7 @@ Os dados que receberemos estão nesse modelo (https://www.kaggle.com/datasets/ga
 # ARQUITETURA SUGERIDA
 
 ![image](https://github.com/user-attachments/assets/62a1b30a-6bf9-47f6-bdd1-03a66b84f371)
+
+# ESCOLHA DAS FERRAMENTAS 
+
+- EVENT HUBS
