@@ -20,7 +20,7 @@ Escolhi o EVENT HUBS para ingestão de dados por ser um serviço de mensageria n
 O Blob Storage foi adicionado como uma opção para armazenar os dados, caso seja necessário backup ou reprocessamento dos eventos vindos do Event Hubs. Essa decisão depende da necessidade de latência do projeto. 
 
 - DATABRICKS AUTOLOADER
-Terá a missão de ingerir os dados em nossa tabela bronze, vindo diretamente do Event HUBS ou consumindo os arquivos parquet disponíveis no Blob Storage, o autoloader é capaz de ingerir volumes de dados gigantescos de uma vez só, sua escalabilidade é feita do forma automática com base no volume de dados.
+Terá a missão de ingerir os dados em nossa tabela bronze, vindo diretamente do Event HUBS ou consumindo os arquivos parquet disponíveis no Blob Storage, o autoloader é capaz de ingerir volumes de dados gigantescos de uma vez só, sua escalabilidade é feita de forma automática com base no volume de dados, apenas novos dados serão ingeridos.
 
  - DELTA LAKE E DELTA LIVE TABLES
 O Delta Lake será responsável por armazenar os nossos dados, utilizando as propriedades ACID, teremos mais consistência e confiabilidade aos armazenar os dados. Em nosso projeto, as Delta Live tables serão responsáveis por fazer toda a parte de processamento de dados do nosso projeto, desde a ingestão (via autoloader), orquestração da pipeline, transformação dos dados entre as camadas (Bronze, Silver, Gold), até a aplicação de processos de qualidade de dados.
