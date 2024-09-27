@@ -22,4 +22,8 @@ Caso existe a necessidade do projeto em armazenar os dados para backup ou re-pro
 - DATABRICKS AUTOLOADER
 Terá a missão de ingerir os dados em nossa tabela bronze, vindo diretamente do Event HUBS ou consumindo os arquivos parquet disponíveis no Blob Storage, o autoloader é capaz de ingerir volumes de dados gigantescos de uma vez só, sua escalabilidade é feita do forma automática com base no volume de dados.
 
- - DELTA LIVE TABLES
+ - DELTA LAKE E DELTA LIVE TABLES
+O Delta Lake será responsável por armazenar os nossos dados, utilizando as propriedades ACID, teremos mais consistência e confiabilidade aos armazenar os dados. Em nosso projeto, as Delta Live tables serão responsáveis por fazer toda a parte de processamento de dados do nosso projeto, desde a ingestão (via autoloader), orquestração da pipeline, transformação dos dados entre as camadas (Bronze, Silver, Gold), até a aplicação de processos de qualidade de dados.
+
+- ARQUITETURA MEDALHÃO
+Escolhi esse modelo de arquitetura por ser recomendada pela própria Databricks ao trabalhar com o Delta Lake. Essa arquitetura permite organizar o pipeline de forma clara e eficiente, separando as camadas de dados (Bronze, Silver, Gold) de acordo com seus propósitos. Isso facilita o refinamento e transformação dos dados em cada etapa.
