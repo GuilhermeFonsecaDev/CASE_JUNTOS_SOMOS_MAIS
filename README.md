@@ -6,3 +6,5 @@ A squad de produtos hoje conta com um(a) PM e pessoas de engenharia de software.
 Os dados que receberemos estão nesse modelo (https://www.kaggle.com/datasets/gabrielramos87/an-online-shop-business)
 
 É necessário também desenvolver um trecho de código para servir de exemplo para os engenheiros de software e de dados. Aqui, deixamos a sua escolha qual parte do código deseja construir para servir de exemplo. Podemos utilizar, Python, Pyspark, Sql e/ou Scala. Precisamos também explicar os motivadores para a escolha de tecnologia."
+
+![image](https://github.com/user-attachments/assets/57a7bee8-2d22-461b-b6b9-6685b0338a1e)
