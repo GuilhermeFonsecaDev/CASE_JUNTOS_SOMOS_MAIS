@@ -14,3 +14,12 @@ Os dados que receberemos estão nesse modelo (https://www.kaggle.com/datasets/ga
 # ESCOLHA DAS FERRAMENTAS 
 
 - EVENT HUBS
+Escolhi o EVENT HUBS para ingestão de dados por ser um serviço de mensageria nativo da Azure, plataforma em que estamos trabalhando, ele cumpre bem a missão para a ingestão em um alto fluxo de dados e também é facilmente integrado com o Databricks e com outros serviçoes da Microsfot.
+
+- BLOB STORAGE (OPCIONAL)
+Caso existe a necessidade do projeto em armazenar os dados para backup ou re-processamento, adicionei o Blob Storage como uma das peças da nossa arquitetura, a decisão de usa-lo ou não deve ser decidida pela necessidade de latência do projeto.
+
+- DATABRICKS AUTOLOADER
+Terá a missão de ingerir os dados em nossa tabela bronze, vindo diretamente do Event HUBS ou consumindo os arquivos parquet disponíveis no Blob Storage, o autoloader é capaz de ingerir volumes de dados gigantescos de uma vez só, sua escalabilidade é feita do forma automática com base no volume de dados.
+
+ - DELTA LIVE TABLES
