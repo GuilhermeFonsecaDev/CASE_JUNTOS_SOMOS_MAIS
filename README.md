@@ -17,7 +17,7 @@ Ao pensar na arquitetura para o projeto, mantive o foco em propor a solução ma
 # ESCOLHA DAS FERRAMENTAS 
 
 - EVENT HUBS
-Escolhi o EVENT HUBS para ingestão de dados por ser um serviço de mensageria nativo da Azure, plataforma em que estamos trabalhando, ele cumpre bem a missão para a ingestão em um alto fluxo de dados e também é facilmente integrado com o Databricks e com outros serviçoes da Microsfot.
+- Escolhi o EVENT HUBS para ingestão de dados por ser um serviço de mensageria nativo da Azure, plataforma em que estamos trabalhando, ele cumpre bem a missão para a ingestão em um alto fluxo de dados e também é facilmente integrado com o Databricks e com outros serviçoes da Microsfot.
 
 - BLOB STORAGE (OPCIONAL)
 O Blob Storage foi adicionado como uma opção para armazenar os dados, caso seja necessário backup ou reprocessamento dos eventos vindos do Event Hubs. Essa decisão depende da necessidade de latência do projeto. 
