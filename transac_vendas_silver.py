@@ -27,12 +27,12 @@ def transac_vendas_silver():
         .withColumn("VALOR_TOTAL", col("PRECO_PRODUTO") * col("QUANTIDADE_COMPRA"))\
         .withColumn("DATA_PROCESSAMENTO", current_date())
         
-
+    # Removendo dados duplicados para um mesmo ID_TRANSACAO
     tabela_silver = tabela_silver.dropDuplicates(["ID_TRANSACAO"])
 
     return tabela_silver
 
-# Definindo CONSTRAINTS para processo de QUALIDADE DE DADOS, impedindo que dados com problema não afetem a camada GOLD futuramente
+# Definindo CONSTRAINTS para processo de QUALIDADE DE DADOS, impedindo que dados com problema afetem a camada GOLD futuramente
 @dlt.expect_or_fail("ID_TRANSACAO unico", "ID_TRANSACAO IS DISTINCT")
 @dlt.expect_or_fail("Valores válidos para as colunas PRECO_PRODUTO e QUANTIDADE_COMPRA", "PRECO_PRODUTO > 0 AND QUANTIDADE_COMPRA > 0")
 def data_quality_check():
