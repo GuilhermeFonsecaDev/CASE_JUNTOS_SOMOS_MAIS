@@ -27,5 +27,7 @@ Terá a missão de ingerir os dados em nossa tabela bronze, vindo diretamente do
  - DELTA LAKE E DELTA LIVE TABLES -
 O Delta Lake será responsável por armazenar os nossos dados, utilizando as propriedades ACID, teremos mais consistência e confiabilidade aos armazenar os dados. Em nosso projeto, as Delta Live tables serão responsáveis por fazer toda a parte de processamento de dados do nosso projeto, desde a ingestão (via autoloader), orquestração da pipeline, transformação dos dados entre as camadas (Bronze, Silver, Gold), até a aplicação de processos de qualidade de dados.
 
+ - DATA QUALITY - Usando um dos beneficios do Delta Live Tables, criei algumas regras de data quality na etapa Silver, para impedir que dados problematicos passem adiante em nossas camadas e comprometam os dados finais em nossa tabela Gold.
+
 - ARQUITETURA MEDALHÃO -
 Escolhi esse modelo de arquitetura por ser recomendada pela própria Databricks ao trabalhar com o Delta Lake. Essa arquitetura permite organizar o pipeline de forma clara e eficiente, separando as camadas de dados (Bronze, Silver, Gold) de acordo com seus propósitos. Isso facilita o refinamento e transformação dos dados em cada etapa.
