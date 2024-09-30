@@ -12,6 +12,8 @@ Os dados que receberemos estão nesse modelo (https://www.kaggle.com/datasets/ga
 ![image](https://github.com/user-attachments/assets/62a1b30a-6bf9-47f6-bdd1-03a66b84f371)
 https://excalidraw.com/#json=2vDC_OD3mjBN3wmxTIgYd,VII5ne8pyAuzEKlbGAlDtQ
 
+Ao pensar na arquitetura para a solução, 
+
 # ESCOLHA DAS FERRAMENTAS 
 
 - EVENT HUBS
