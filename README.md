@@ -12,7 +12,7 @@ Os dados que receberemos estão nesse modelo (https://www.kaggle.com/datasets/ga
 ![image](https://github.com/user-attachments/assets/62a1b30a-6bf9-47f6-bdd1-03a66b84f371)
 https://excalidraw.com/#json=2vDC_OD3mjBN3wmxTIgYd,VII5ne8pyAuzEKlbGAlDtQ
 
-Ao pensar na arquitetura para o projeto, mantive o foco em propor a solução mais moderna possivel, utilizando como vantagem a experiência do time em Azure e em Databricks, mantendo o projeto 100% em Cloud e com ferramentas de fácil escalonamento e integração entre elas. O Spark foi escolhido por sua robustez no tratamento de dados em larga escala, otimizando o desempenho dos pipelines. 
+Ao pensar na arquitetura para o projeto, mantive o foco em propor a solução mais moderna possivel, utilizando como vantagem a experiência do time em Azure e em Databricks, mantendo o projeto 100% em Cloud e com ferramentas de fácil escalonamento e integração entre elas. O Spark foi escolhido por sua robustez no tratamento de dados em larga escala, otimizando o desempenho dos pipelines e garantindo um fácil desenvolvimento.
 
 # ESCOLHA DAS FERRAMENTAS 
 
