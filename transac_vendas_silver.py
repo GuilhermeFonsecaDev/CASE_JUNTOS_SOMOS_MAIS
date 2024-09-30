@@ -7,7 +7,7 @@ from pyspark.sql.functions import col
     "quality": "silver"})
 
 def transac_vendas_silver():
-    # Lendo nossa tabela bronze ingerida pelo autoloader
+    # Lendo nossa tabela bronze ingerida pelo autoloader e tratando os nomes das colunas para que fiquem mais amigáveis de fácil entendimento
     tabela_bronze = spark.table("catalogo.database.transac_vendas_bronze").select(
       col('TransactionNo').alias('ID_TRANSACAO'),
       col('Date').alias('DATA_TRANSACAO'),
